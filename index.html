@@ -1,0 +1,294 @@
+<html>
+ <head>
+  <title>Eiffeline Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  
+  <style>
+   @font-face {
+            font-family: 'Comic Sans MS';
+            src: url('https://fonts.cdnfonts.com/s/15353/ComicSansMS3.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ffffff;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo span {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #ffffff;
+        }
+        .header .intro {
+            max-width: 50%;
+        }
+        .header .intro h1 {
+            font-size: 48px;
+            color: #333;
+        }
+        .header .intro h2 {
+            font-size: 24px;
+            color: #666;
+            margin: 10px 0;
+        }
+        .header .intro .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4a4a8a;
+            color: #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .header .intro .social-icons {
+            margin-top: 20px;
+        }
+        .header .intro .social-icons i {
+            font-size: 24px;
+            color: #666;
+            margin-right: 10px;
+        }
+        .header .image {
+            position: relative;
+        }
+        .header .image img {
+            width: 300px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .header .image .dots {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background-color: #4a4a8a;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header .image .dots::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            margin: 2px;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: #ffffff;
+        }
+        .projects .project {
+            width: 30%;
+            text-align: center;
+        }
+        .projects .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .projects .project h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+        .projects .project a {
+            text-decoration: none;
+            color: #4a4a8a;
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+        }
+        .about {
+            padding: 50px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .about p {
+            font-size: 20px;
+            color: #333;
+        }
+        .contact {
+            padding: 50px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .contact p {
+            font-size: 20px;
+            color: #333;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #4a4a8a;
+            font-weight: 600;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="logo">
+    <span>
+     Eiffeline Melati O
+    </span>
+   </div>
+   <ul>
+    <li>
+     <a href="#">
+      Home
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      About
+     </a>
+    </li>
+    <li>
+     <a href="#project">
+      Project
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Contact
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="header">
+   <div class="intro">
+    <h1>
+     Hello, I'm Eiffeline ^^
+    </h1>
+    <h2>
+     UI/UX Designer
+    </h2>
+    <div class="social-icons">
+        <!-- Facebook Icon with URL -->
+        <a href="https://www.facebook.com/share/15S9dmU1EL/" target="_blank" class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    </div>
+   </div>
+   <div class="image">
+    <img alt="Anime character portrait" height="300" src="nailong.jpeg" width="300"/>
+    <div class="dots">
+    </div>
+   </div>
+  </div>
+  <div class="wave">
+  </div>
+  <div class="about">
+   <p>
+    hallo Saya seorang mahasiswi Universitas Pamulang jurusan Teknik Informatika. hobi saya bermain game dan menyanyi ^^
+   </p>
+  </div>
+  <div id="project" class="projects">
+    <div class="project">
+        <img alt="Project 1 screenshot" src="https://storage.googleapis.com/a1aa/image/SYHKliyzWVKgON46qSOgrVGlShofAYnWL5CCfjscSuYP05oTA.jpg" />
+        <h3>Project 1</h3>
+        <a href="login.html">View Project</a>
+    </div>
+    <div class="project">
+        <img alt="Project 2 screenshot" src="https://storage.googleapis.com/a1aa/image/GJ5IhnOyKC76PRrcTK9pz6eCJeKX5cDtFqYoHGty9vrO05oTA.jpg" />
+        <h3>Project 2</h3>
+        <a href="kalku.html">View Project</a>
+    </div>
+    <div class="project">
+        <img alt="Project 3 screenshot" src="https://storage.googleapis.com/a1aa/image/xu6bi9yYcTZBNVtUSsoe6XDMHL1bjCioFZFzhgNphXBG6c0JA.jpg" />
+        <h3>Project 3</h3>
+        <a href="dashboard.html">View Project</a>
+    </div>
+    <div class="project">
+        <img alt="Project 4 screenshot" src="https://storage.googleapis.com/a1aa/image/xu6bi9yYcTZBNVtUSsoe6XDMHL1bjCioFZFzhgNphXBG6c0JA.jpg" />
+        <h3>Project 4</h3>
+        <a href="gamee/game.html">View Project</a>
+    </div>
+    <div class="project">
+        <img alt="Project 5 screenshot" src="https://storage.googleapis.com/a1aa/image/xu6bi9yYcTZBNVtUSsoe6XDMHL1bjCioFZFzhgNphXBG6c0JA.jpg" />
+        <h3>Project 4</h3>
+        <a href="diagram.html">View Project</a>
+    </div>
+</div>
+  <div style="height: 40px;"></div>
+
+  <!-- Sertifikat -->
+
+  <section id="sertifikat" class="p-4">
+    <div class="flex flex-wrap justify-center">
+        <!-- Card 1 -->
+        <a href="https://www.sololearn.com/certificates/CC-MOGE61NI/image/png" target="_blank" class="group w-full max-w-[400px] mx-2 mb-4">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
+                <img src="sertifcss.jpeg" alt="CSS Certificate" class="w-full h-[300px] object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-center text-gray-800">CSS Introduction</h2>
+                </div>
+            </div>
+        </a>
+        <!-- Card 2 -->
+        <a href="https://www.sololearn.com/certificates/CC-E4ZSUX7P/image/png" target="_blank" class="group w-full max-w-[400px] mx-2 mb-4">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
+                <img src="sertifhtml.jpeg" alt="HTML Certificate" class="w-full h-[300px] object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-center text-gray-800">HTML Introduction</h2>
+                </div>
+            </div>
+        </a>
+        <!-- Card 3 -->
+        <a href="https://www.sololearn.com/certificates/CC-E4ZSUX7P/image/png" target="_blank" class="group w-full max-w-[400px] mx-2 mb-4">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform group-hover:scale-85 transition-transform duration-300">
+                <img src="sertifjs.jpeg" alt="JS Certificate" class="w-full h-[300px] object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold text-center text-gray-800">JS Introduction</h2>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<div style="height: 40px;"></div>
+
+   <!-- contact section -->
+  <div class="contact">
+   <p>
+    Contact WhatsApp: <a href="https://wa.me/087873494256">087873494256</a>
+   </p>
+  </div>
+</html>
+ </body>
+</html>
